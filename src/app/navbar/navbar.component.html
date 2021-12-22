@@ -1,7 +1,9 @@
-<mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Inicio"><app-home></app-home></mat-tab>
-    <mat-tab label="Empresa">Enterprise</mat-tab>
-    <mat-tab label="Experiencia">Experience</mat-tab>
-    <mat-tab label="Obras">Obras</mat-tab>
-    <mat-tab label="Contactos">Contacts</mat-tab>
-  </mat-tab-group>
+<nav mat-tab-nav-bar mat-align-tabs="center">
+  <a mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.link"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive"
+    >{{link.label}}
+  </a>
+</nav>
