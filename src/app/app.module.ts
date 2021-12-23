@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs'
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatIconModule } from '@angular/material/icon';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +17,7 @@ import { ConstructionsComponent } from './constructions/constructions.component'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RestorationsComponent } from './restorations/restorations.component';
 import { AppraisalsComponent } from './appraisals/appraisals.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { AppraisalsComponent } from './appraisals/appraisals.component';
     ConstructionsComponent,
     RestorationsComponent,
     AppraisalsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { AppraisalsComponent } from './appraisals/appraisals.component';
     MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [
