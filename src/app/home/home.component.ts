@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,49 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  images = [
+    {
+      title: "Columna",
+      description: "Esto es una columna",
+      route: "/assets/images/columna.jpg"
+    },
+    {
+      title: "Tenis",
+      description: "Hoa mundo",
+      route: "/assets/images/tenis.jpg"
+    }
+  ];
 
-  constructor() { }
+  rowItems = [
+    {
+      title: "Obras",
+      description: "Descripcion",
+      image: "/assets/images/epc.jpg",
+      route: "./obras"
+    },
+    {
+      title: "Restauraciones",
+      description: "Descripcion",
+      image: "/assets/images/palacio.jpg",
+      route: "./restauraciones"
+    },
+    {
+      title: "Avalúos",
+      description: "Descripcion",
+      image: "./assets/images/avaluo.jpg",
+      route: "./avaluos"
+    }
+  ]
 
-  ngOnInit(): void {
+  load(route: string): void {
+    this.router.navigate([route]);
   }
 
+  constructor(private router: Router) {
+    
+  }
+
+  ngOnInit(): void {
+    
+  }
 }
