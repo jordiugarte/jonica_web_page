@@ -11,13 +11,8 @@ export class HomeComponent implements OnInit {
 
   images = [
     {
-      title: "Columna",
-      description: "Esto es una columna",
-      route: "/assets/images/columna.jpg"
-    },
-    {
       title: "Tenis",
-      description: "Hoa mundo",
+      description: "Hola mundo",
       route: "/assets/images/tenis.jpg"
     }
   ];

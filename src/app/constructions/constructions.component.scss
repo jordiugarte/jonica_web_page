@@ -1,0 +1,36 @@
+.cards {
+    background-color: rgb(0, 89, 255);
+    justify-content: center;
+    padding: 64px;
+}
+
+.titleSection {
+    color: white;
+    font-style: normal;
+    text-align: center;
+    font-size: 64px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.row {
+    align-content: center;
+    justify-content: center;
+}
+
+.mat-card {
+    width: 350px;
+    border-radius: 18px;
+    margin: 16px;
+}
+
+.mat-button {
+    color: blue;
+}
+
+.mat-card-image {
+    max-width: wrap;
+    max-height: 200px;
+    align-content: center;
+    align-self: center;
+}
