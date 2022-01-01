@@ -38,8 +38,8 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  load(route: string): void {
-    this.router.navigate([route]);
+  load(route: string) {
+    this.router.navigateByUrl(route);
   }
 
   constructor(private router: Router) {

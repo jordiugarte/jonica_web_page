@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RestorationsComponent } from './restorations/restorations.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   { path: 'inicio', component:  HomeComponent},
   { path: 'empresa', component:  EnterpriseComponent},
   { path: 'obras', component: ConstructionsComponent},
