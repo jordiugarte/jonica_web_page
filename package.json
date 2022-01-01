@@ -26,6 +26,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@material/list": "^13.0.0",
     "@ng-bootstrap/ng-bootstrap": "^11.0.0",
     "angular-bootstrap-md": "^4.3.7",
     "angular-responsive-carousel": "^2.1.2",

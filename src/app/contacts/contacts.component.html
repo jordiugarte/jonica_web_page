@@ -1,16 +1,37 @@
 <p class="titleSection">Contacto</p>
-<div class="row">
-  <div class="col-md-6 mt-md-0 mt-3">
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1356.161897723186!2d-68.07862646042085!3d-16.53907085339824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21ddd87b49ad%3A0xe71cd2f5173d025!2sTorre%20Faith!5e0!3m2!1ses!2sbo!4v1640319512885!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1356.161897723186!2d-68.07862646042085!3d-16.53907085339824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21ddd87b49ad%3A0xe71cd2f5173d025!2sTorre%20Faith!5e0!3m2!1ses!2sbo!4v1640319512885!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
+    <div class="col-sm">
+      <ul class="list-unstyled">
+        <mat-list>
+          <mat-list-item><mat-icon>place</mat-icon>Cota Cota, Av. Ballivián, Edificio Faith #7</mat-list-item>
+          <mat-list-item><mat-icon>phone</mat-icon>77790111 - 77706886</mat-list-item>
+          <mat-list-item><mat-icon>email</mat-icon>jonicaconstrucciones@gmail.com</mat-list-item>
+          <mat-list-item><mat-icon>av_timer</mat-icon>9:00 - 16:00</mat-list-item>
+        </mat-list>
+      </ul>
     </div>
-  <div class="col-md-6 mt-md-0 mt-3">
-    <ul class="list-unstyled">
-      <li><h4><mat-icon>place</mat-icon>Cota Cota, Av. Ballivián, Edificio Faith #7</h4></li>
-      <li><h4><mat-icon>phone</mat-icon>77790111 - 77706886</h4></li>
-      <li><h4><mat-icon>email</mat-icon>jonicaconstrucciones@gmail.com</h4></li>
-      <li><h4><mat-icon>av_timer</mat-icon>9:00 - 16:00</h4></li>
-    </ul>
+  </div>
+  <div class="row">
+    <mat-card class="mat-elevation-z4" *ngFor="let item of contacts">
+      <mat-card-content>
+        <img class="avatar" [src]="item.image">
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>{{ item.occupation }}</mat-card-subtitle>
+        <mat-list>
+          <mat-list-item><mat-icon>phone</mat-icon>{{ item.phone }}</mat-list-item>
+          <mat-list-item><mat-icon>email</mat-icon>{{ item.email }}</mat-list-item>
+        </mat-list>
+        <mat-card-actions>
+          <button mat-raised-button class="whatsapp-button" (click)="toWhatsapp(item.phone)"><mat-icon>whatsapp</mat-icon>Whatsapp</button>
+          <button mat-raised-button class="email-button" (click)="toEmail(item.email)"><mat-icon>email</mat-icon>Correo electrónico</button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
   </div>
 </div>

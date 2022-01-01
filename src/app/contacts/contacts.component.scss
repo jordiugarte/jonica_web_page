@@ -13,5 +13,67 @@
     font-size: 64px;
     padding-top: 64px;
     padding-bottom: 64px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    align-content: center;
+    justify-content: center;
+}
+
+.mat-card {
+    width: 360px;
+    border-radius: 18px;
+    height: wrap;
+    margin: 16px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+
+mat-card-title {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+mat-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+
+mat-card-content {
+    width: 100%;
+    padding: 16px;
+}
+
+mat-card-actions {
+    padding-top: 32px;
+}
+
+mat-icon {
+    margin-right: 12px;
+}
+
+.whatsapp-button {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+}
+
+.email-button {
+    background-color: blue;
+    color: white;
+    font-size: 12px;
 }
