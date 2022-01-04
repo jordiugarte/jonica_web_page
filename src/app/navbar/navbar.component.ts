@@ -19,7 +19,7 @@ export class NavbarComponent {
         index: 0
       },
       {
-        label: 'Empresa',
+        label: 'Conócenos',
         link: './empresa',
         index: 1
       },

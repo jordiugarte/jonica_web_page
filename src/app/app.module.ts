@@ -22,6 +22,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RestorationsComponent } from './restorations/restorations.component';
 import { AppraisalsComponent } from './appraisals/appraisals.component';
 import { FooterComponent } from './footer/footer.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { FooterComponent } from './footer/footer.component';
     RestorationsComponent,
     AppraisalsComponent,
     FooterComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule,
     FlexLayoutModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [

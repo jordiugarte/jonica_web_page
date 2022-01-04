@@ -6,15 +6,6 @@
     padding-right: 16px;
 }
 
-.titleSection {
-    color: black;
-    font-style: normal;
-    text-align: center;
-    font-size: 64px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
-
 .row {
     align-content: center;
     justify-content: center;
@@ -61,6 +52,10 @@ mat-card-actions {
 
 mat-icon {
     margin-right: 12px;
+}
+
+mat-list-item {
+    font-size: 18px;
 }
 
 .whatsapp-button {

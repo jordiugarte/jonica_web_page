@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,7 @@ export class HomeComponent implements OnInit {
         "Infraestructura hidrosanitaria, termomecánica, eléctrica y domótica",
       ],
       image: "/assets/images/epc.jpg",
-      route: "./obras"
+      route: "proyectos"
     },
     {
       title: "Construcciones",
@@ -37,7 +38,7 @@ export class HomeComponent implements OnInit {
         "Restauración del patrimonio arquitectónico"
       ],
       image: "/assets/images/palacio.jpg",
-      route: "./restauraciones"
+      route: "construcciones"
     },
     {
       title: "Consultorías",
@@ -47,15 +48,15 @@ export class HomeComponent implements OnInit {
         "Urbanismo y paisajismo",
       ],
       image: "./assets/images/avaluo.jpg",
-      route: "./avaluos"
+      route: "consultorias"
     }
   ];
 
-  load(route: string) {
-    this.router.navigate([route]);
+  openDialog(route: string) {
+    const dialogRef = this.dialog.open(DialogComponent, {data: route});
   }
 
-  constructor(private router: Router) {
+  constructor(public dialog: MatDialog) {
     
   }
 

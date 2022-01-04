@@ -22,7 +22,7 @@
               <mat-list-item *ngFor="let subComponent of item.description">{{ subComponent }}</mat-list-item>
             </mat-list>
             <mat-card-actions>
-              <button mat-raised-button color="primary" (click)="load(item.route)">Más información</button>
+              <button mat-raised-button color="primary" (click)="openDialog(item.route)">Más información</button>
             </mat-card-actions>
           </mat-card-content>
         </mat-card>
