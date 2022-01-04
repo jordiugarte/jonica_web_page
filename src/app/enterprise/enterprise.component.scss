@@ -1,3 +1,8 @@
+* {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
 .titleSection {
     color: black;
     font-style: normal;
@@ -14,8 +19,6 @@
     text-align: left;
     font-size: 32px;
     padding-top: 32px;
-    padding-left: 64px;
-    padding-right: 64px;
     padding-bottom: 32px;
 }
 
@@ -24,8 +27,10 @@
     font-style: normal;
     font-weight: 300;
     text-align: left;
-    font-size: 16px;
-    padding-left: 64px;
-    padding-right: 64px;
+    font-size: 18px;
     padding-bottom: 32px;
+}
+
+img {
+    width: 100%;
 }

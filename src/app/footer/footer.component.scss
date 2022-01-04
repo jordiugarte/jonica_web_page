@@ -24,8 +24,11 @@
     margin-right: 10px;
 }
 
-h4 {
-    line-height: 1em;
+mat-icon {
     color: #999999;
-    font-size: 16px;
+}
+
+.mat-list-item {
+    color: #999999;
+    text-align: start;
 }

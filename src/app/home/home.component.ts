@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 
 export class HomeComponent implements OnInit {
+  activeLinkIndex = -1; 
 
   images = [
     {
@@ -19,27 +20,39 @@ export class HomeComponent implements OnInit {
 
   rowItems = [
     {
-      title: "Obras",
-      description: "Descripcion",
+      title: "Proyectos",
+      description: [
+        "Diseño arquitectónico",
+        "Diseño estructural",
+        "Infraestructura hidrosanitaria, termomecánica, eléctrica y domótica",
+      ],
       image: "/assets/images/epc.jpg",
       route: "./obras"
     },
     {
-      title: "Restauraciones",
-      description: "Descripcion",
+      title: "Construcciones",
+      description: [
+        "Obra civiles",
+        "Patologías y rehabilitación de edificios",
+        "Restauración del patrimonio arquitectónico"
+      ],
       image: "/assets/images/palacio.jpg",
       route: "./restauraciones"
     },
     {
-      title: "Avalúos",
-      description: "Descripcion",
+      title: "Consultorías",
+      description: [
+        "Gestión de proyectos y avalúos",
+        "Museografía",
+        "Urbanismo y paisajismo",
+      ],
       image: "./assets/images/avaluo.jpg",
       route: "./avaluos"
     }
-  ]
+  ];
 
   load(route: string) {
-    this.router.navigateByUrl(route);
+    this.router.navigate([route]);
   }
 
   constructor(private router: Router) {
