@@ -1,16 +1,12 @@
-.cards {
-    background-color: rgb(0, 89, 255);
-    justify-content: center;
-    padding: 64px;
-}
+* {
+    font-family: 'Montserrat', sans-serif;
+}  
 
-.titleSection {
-    color: white;
-    font-style: normal;
-    text-align: center;
-    font-size: 64px;
-    padding-top: 32px;
-    padding-bottom: 64px;
+.cards {
+    justify-content: center;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 96px;
 }
 
 .row {

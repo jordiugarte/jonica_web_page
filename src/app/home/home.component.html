@@ -1,15 +1,9 @@
 <div>
-  <ngb-carousel *ngIf="images"n s>
-    <ng-template ngbSlide *ngFor="let item of images">
-      <div class="picsum-img-wrapper">
-        <img class="" [src]="item.route" alt="item.title">
-      </div>
-      <div class="carousel-caption">
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.description }}</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
+  <video autoplay muted loop id="myVideo">
+    <source src="./assets/videos/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+    <img src="./assets/images/logo.jpg">
+  </video>
   <div class="cards">
     <div style="background: rgba(0, 0, 0, 0.5);">
       <p class="titleSection">Servicios</p>

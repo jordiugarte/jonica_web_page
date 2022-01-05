@@ -13,21 +13,51 @@ export class ConstructionsComponent implements OnInit {
     {
       title: "Obras",
       description: "Descripcion",
+      date: "10/10/10",
       image: "/assets/images/epc.jpg",
-      route: "./obras"
     },
     {
-      title: "Restauraciones",
+      title: "Obras",
       description: "Descripcion",
-      image: "/assets/images/palacio.jpg",
-      route: "./restauraciones"
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
     },
     {
-      title: "Avalúos",
+      title: "Obras",
       description: "Descripcion",
-      image: "./assets/images/avaluo.jpg",
-      route: "./avaluos"
-    }
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
+    },
+    {
+      title: "Obras",
+      description: "Descripcion",
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
+    },
+    {
+      title: "Obras",
+      description: "Descripcion",
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
+    },
+    {
+      title: "Obras",
+      description: "Descripcion",
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
+    },
+    {
+      title: "Obras",
+      description: "Descripcion",
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
+    },
+    {
+      title: "Obras",
+      description: "Descripcion",
+      date: "10/10/10",
+      image: "/assets/images/epc.jpg",
+    },
   ]
 
   load(route: string): void {
