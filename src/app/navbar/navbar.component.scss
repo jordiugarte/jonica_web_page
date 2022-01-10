@@ -3,13 +3,49 @@
     font-size: 14px;
 }
 
-.mat-tab-nav-bar {
-    padding: 10px;
+nav {
+    width: 100%;
+}
+
+.mat-tab-nav-bar {  
     background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.mat-tab-link {
+    font-weight: 600;
+    color: black;
 }
 
 .logo {
     width: 90px;
     height: 100px;
     padding: 10px;
+}
+
+.navbar-container {
+    height: 100vh;
+    position: absolute;
+    z-index: 6;
+}
+  
+.mobile-navbar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+  
+.sidenav {
+    padding: 20px;
+}
+
+.mat-flat-button {
+    font-size: 24px;
+    padding-top: 8px;
+    font-weight: 600;
 }

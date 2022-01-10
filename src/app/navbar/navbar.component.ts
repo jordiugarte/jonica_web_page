@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,10 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
   title = 'angular-material-tab-router';  
   navLinks: any[];
-  activeLinkIndex = -1; 
+  activeLinkIndex = -1;
+  mobile = false;
+  showFiller = false;
+
   constructor(private router: Router) {
     this.navLinks = [
       {
@@ -56,5 +59,19 @@ export class NavbarComponent {
       this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
       }
     );
+    this.detectScreenSize
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.detectScreenSize();
+  }
+
+  ngAfterViewInit() {
+    this.detectScreenSize();
+  }
+
+  private detectScreenSize() {
+    this.mobile = window.screen.width <= 1200;
   }
 }

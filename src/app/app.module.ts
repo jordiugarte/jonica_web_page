@@ -24,6 +24,7 @@ import { AppraisalsComponent } from './appraisals/appraisals.component';
 import { FooterComponent } from './footer/footer.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonModule,
     MatListModule,
     MatDialogModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [

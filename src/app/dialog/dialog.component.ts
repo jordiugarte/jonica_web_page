@@ -11,6 +11,7 @@ export class DialogComponent implements OnInit {
   title = "";
   content = "";
   image = "";
+  date = "";
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -37,9 +38,10 @@ export class DialogComponent implements OnInit {
         break;
       }
       default: {
-        this.title = "Proyectos";
-        this.content = "Contenido";
-        this.image = "image";
+        this.title = this.data.title;
+        this.content = this.data.description;
+        this.image = this.data.image;
+        this.date = this.data.date;
         break;
       }
     }

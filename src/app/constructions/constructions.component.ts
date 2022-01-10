@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-constructions',
@@ -60,11 +62,11 @@ export class ConstructionsComponent implements OnInit {
     },
   ]
 
-  load(route: string): void {
-    this.router.navigate([route]);
+  openDialog(item: any): void {
+    const dialogRef = this.dialog.open(DialogComponent, {data: item});
   }
 
-  constructor(private router: Router) {
+  constructor(public dialog: MatDialog) {
     
   }
 
