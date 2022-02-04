@@ -4,6 +4,12 @@
     background-image: url("/assets/images/servicios.jpg");
 }
 
+.banner {
+    background-color: white;
+    justify-content: center;
+    color: white;
+}
+
 .mat-card {
     width: 350px;
     border-radius: 18px;
@@ -55,7 +61,7 @@ h3 {
     font-size: 72px;
 }
 
- #video {
+#video {
     z-index: 0;
     right: 0;
     left: 0;
@@ -63,9 +69,9 @@ h3 {
     top: 0;
     min-width: 100%;
     min-height: 100%;
- }
+}
 
- .overlay {
+.overlay {
     position: absolute;
     z-index: 1;
     left: 0;
@@ -74,30 +80,30 @@ h3 {
     margin-top: 25vh;
     background: rgba(0, 0, 0, 0.5);
     padding: 32px;
- }
+}
 
- .overlay h1 {
+.overlay h1 {
     font-family: "Times New Roman", Times, serif;
     font-size: 72px;
     font-style: bold;
     color: white;
     padding-bottom: 14px;
- }
+}
 
- .overlay h2 {
+.overlay h2 {
     font-family: "Times New Roman", Times, serif;
     font-size: 41px;
     font-weight: 400;
     color: white;
     padding-bottom: 14px;
- }
+}
 
- .logo {
+.logo {
     width: 150px;
     margin-bottom: 32px;
- }
+}
 
- .brand-container {
+.brand-container {
     overflow: hidden;
     width: 100%;
     height: 100vh;
@@ -105,10 +111,10 @@ h3 {
     align-content: center;
     justify-content: center;
     text-align: center;
- }
+}
 
- hr {
-     width: 300px;
-     height: 1px;
-     background-color: white;
- }
+hr {
+    width: 300px;
+    height: 1px;
+    background-color: white;
+}

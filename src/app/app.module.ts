@@ -25,6 +25,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {TextFieldModule} from '@angular/cdk/text-field';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatButtonModule,
     MatListModule,
     MatDialogModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatPaginatorModule,
+    TextFieldModule
   ],
   providers: [],
   bootstrap: [
