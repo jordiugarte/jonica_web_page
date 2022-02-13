@@ -27,29 +27,19 @@ export class NavbarComponent {
         index: 1
       },
       {
-        label: 'Obras',
-        link: './obras',
+        label: 'Servicios',
+        link: './servicios',
         index: 2
-      },
-      {
-        label: 'Restauraciones',
-        link: './restauraciones',
-        index: 3
-      },
-      {
-        label: 'Avalúos',
-        link: './avaluos',
-        index: 4
       },
       {
         label: 'Experiencia',
         link: './experiencia',
-        index: 5
+        index: 3
       },
       {
         label: 'Contacto',
         link: './contacto',
-        index: 6
+        index: 4
       }, 
     ];
   }
@@ -74,4 +64,8 @@ export class NavbarComponent {
   private detectScreenSize() {
     this.mobile = window.screen.width <= 1200;
   }
+
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
 }

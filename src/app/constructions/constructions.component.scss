@@ -1,6 +1,6 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-}  
+    font-family: "Montserrat", sans-serif;
+}
 
 .cards {
     justify-content: center;
@@ -14,8 +14,9 @@
     justify-content: center;
 }
 
-.mat-card {
+mat-card {
     width: 350px;
+    height: 300px;
     border-radius: 18px;
     margin: 16px;
 }
@@ -24,9 +25,16 @@
     color: blue;
 }
 
+.img-container {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
 .mat-card-image {
-    max-width: wrap;
-    max-height: 200px;
+    width: 120%;
+    height: auto;
     align-content: center;
     align-self: center;
+    justify-content: center;
 }

@@ -1,9 +1,17 @@
-<p class="titleSection" style="color: black;">Experiencia</p>
-<img src="./assets/images/roof.jpg">
-<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare tincidunt metus, sed pharetra eros vestibulum ut. Donec suscipit nisi ac nulla blandit, eget condimentum erat efficitur. Vivamus vel tellus leo. Sed imperdiet magna sem, ac vulputate nibh aliquam ut. Mauris euismod ut elit ac convallis. Sed sit amet sagittis lacus. In gravida libero velit, nec consequat nulla aliquet id. Praesent mauris felis, rutrum quis odio vel, varius dictum nulla. Integer enim diam, feugiat sit amet venenatis vel, pharetra a tortor. Mauris accumsan ligula vel mi lobortis auctor. Nullam et felis a erat semper molestie ac vitae orci. Vestibulum lacinia commodo tellus, quis hendrerit turpis dictum eget. Nullam rutrum, ante vel iaculis fringilla, tellus nisl luctus dolor, eget hendrerit mauris tortor ut quam.</p>
-<p class="subTitle">Misión</p>
-<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare tincidunt metus, sed pharetra eros vestibulum ut. Donec suscipit nisi ac nulla blandit, eget condimentum erat efficitur. Vivamus vel tellus leo. Sed imperdiet magna sem, ac vulputate nibh aliquam ut. Mauris euismod ut elit ac convallis. Sed sit amet sagittis lacus. In gravida libero velit, nec consequat nulla aliquet id. Praesent mauris felis, rutrum quis odio vel, varius dictum nulla. Integer enim diam, feugiat sit amet venenatis vel, pharetra a tortor. Mauris accumsan ligula vel mi lobortis auctor. Nullam et felis a erat semper molestie ac vitae orci. Vestibulum lacinia commodo tellus, quis hendrerit turpis dictum eget. Nullam rutrum, ante vel iaculis fringilla, tellus nisl luctus dolor, eget hendrerit mauris tortor ut quam.</p>
-<p class="subTitle">Visión</p>
-<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare tincidunt metus, sed pharetra eros vestibulum ut. Donec suscipit nisi ac nulla blandit, eget condimentum erat efficitur. Vivamus vel tellus leo. Sed imperdiet magna sem, ac vulputate nibh aliquam ut. Mauris euismod ut elit ac convallis. Sed sit amet sagittis lacus. In gravida libero velit, nec consequat nulla aliquet id. Praesent mauris felis, rutrum quis odio vel, varius dictum nulla. Integer enim diam, feugiat sit amet venenatis vel, pharetra a tortor. Mauris accumsan ligula vel mi lobortis auctor. Nullam et felis a erat semper molestie ac vitae orci. Vestibulum lacinia commodo tellus, quis hendrerit turpis dictum eget. Nullam rutrum, ante vel iaculis fringilla, tellus nisl luctus dolor, eget hendrerit mauris tortor ut quam.</p>
-<p class="subTitle">Valores corporativos</p>
-<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare tincidunt metus, sed pharetra eros vestibulum ut. Donec suscipit nisi ac nulla blandit, eget condimentum erat efficitur. Vivamus vel tellus leo. Sed imperdiet magna sem, ac vulputate nibh aliquam ut. Mauris euismod ut elit ac convallis. Sed sit amet sagittis lacus. In gravida libero velit, nec consequat nulla aliquet id. Praesent mauris felis, rutrum quis odio vel, varius dictum nulla. Integer enim diam, feugiat sit amet venenatis vel, pharetra a tortor. Mauris accumsan ligula vel mi lobortis auctor. Nullam et felis a erat semper molestie ac vitae orci. Vestibulum lacinia commodo tellus, quis hendrerit turpis dictum eget. Nullam rutrum, ante vel iaculis fringilla, tellus nisl luctus dolor, eget hendrerit mauris tortor ut quam.</p>
+<div class="cards">
+    <p class="titleSection" style="color: black; margin-top: 128px;">Experiencia</p>
+    <div class="row">
+        <mat-card class="mat-elevation-z4" *ngFor="let item of rowItems">
+            <mat-card-header>
+                <mat-card-title>{{ item.title }}</mat-card-title>
+                <mat-card-subtitle>{{ item.date }}</mat-card-subtitle>
+            </mat-card-header>
+            <div class="img-container">
+                <img mat-card-image [src]="item.image">
+            </div>
+            <mat-card-actions>
+                <button mat-button (click)="openDialog(item)">Más información</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

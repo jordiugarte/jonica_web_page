@@ -1,9 +1,26 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div (window:resize)="onResize()">
-  <nav *ngIf="!mobile" mat-tab-nav-bar mat-align-tabs="center">
-    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive"
-      [active]="rla.isActive">{{link.label}}
-    </a>
-  </nav>
+  <div *ngIf="!mobile" class="nav-bar">
+    <mat-toolbar class="title">
+      <h1>JÓNICA CONSTRUCCIONES</h1>
+      <mat-card-actions>
+        <button mat-icon-button (click)="goToLink('https://www.facebook.com/jonicaconstruccionesbolivia/')">
+          <i class="fa fa-linkedin" style="font-size: 22px; color: white"></i>
+        </button>
+        <button mat-icon-button (click)="goToLink('https://www.facebook.com/jonicaconstruccionesbolivia/')">
+          <i class="fa fa-instagram" style="font-size: 22px; color: white"></i>
+        </button>
+        <button mat-icon-button (click)="goToLink('https://www.facebook.com/jonicaconstruccionesbolivia/')">
+          <i class="fa fa-facebook-official" style="font-size: 22px; color: white"></i>
+        </button>
+      </mat-card-actions>
+    </mat-toolbar>
+    <nav mat-tab-nav-bar mat-align-tabs="center">
+      <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">{{link.label}}
+      </a>
+    </nav>
+  </div>
   <div *ngIf="mobile" class="mobile-navbar">
     <button mat-icon-button (click)="drawer.toggle()">
       <svg style="width:28px;height:28px" viewBox="0 0 24 24">
