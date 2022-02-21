@@ -71,7 +71,7 @@ export class ExperienceComponent implements OnInit {
       image: "/assets/images/constructions/cato.jpg",
     },
     {
-      title: "Hospital Maternológio",
+      title: "Hospital Maternológico",
       description: "Construcción de Hospital Maternológico y lotes y servicios Distrito IV FASE III. Obra ejecutada para la Cooperación Técnica Belga y el Proyecto de Salud El Alto.",
       date: "15 de diciembre de 2013",
       image: "/assets/images/constructions/hospital.jpg",
@@ -125,7 +125,7 @@ export class ExperienceComponent implements OnInit {
       image: "/assets/images/constructions/ministerio.jpg",
     },
     {
-      title: "Gobierno Municipal de El Alto",
+      title: "Coliseo de El Alto",
       description: "Construcción de Coliseo de El Alto.",
       date: "20 de junio de 2005",
       image: "/assets/images/constructions/elalto.jpg",

@@ -1,6 +1,6 @@
 <div>
   <div class="brand-container">
-    <video autoplay muted loop id="video">
+    <video autoplay muted loop="true" id="video">
       <source src="./assets/videos/background.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
@@ -13,35 +13,12 @@
     </div>
   </div>
   <div class="banner">
-    <div fxLayout="row column" fxLayoutAlign="center">
-      <mat-card>
-        <mat-card-content>
-          <mat-card-title>Quienes somos</mat-card-title>
-          <mat-card-actions>
-
-          </mat-card-actions>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    <mat-card-title style="font-size: 64px;">¿Quiénes somos?</mat-card-title>
+    <hr style="width: 85%; margin-top: 36px; margin-bottom: 4px;">
+    <h3>Jónica Construcciones es una empresa constructora con mas de treinta años de experiencia en la
+      construcción,
+      restauración y avalúos de mucha importancia en La Paz y el país.</h3>
   </div>
-  <div class="cards">
-    <div style="background: rgba(0, 0, 0, 0.5);">
-      <p class="titleSection">Servicios</p>
-      <div fxLayout="row column" fxLayoutAlign="center" style="padding-bottom: 96px;">
-        <mat-card *ngFor="let item of rowItems">
-          <img class="mat-card-image" [src]="item.image">
-          <mat-card-content>
-            <mat-card-title>{{ item.title }}</mat-card-title>
-            <mat-list>
-              <mat-list-item *ngFor="let subComponent of item.description">{{ subComponent }}</mat-list-item>
-            </mat-list>
-            <mat-card-actions>
-              <button mat-raised-button color="primary" (click)="openDialog(item.route)">Más información</button>
-            </mat-card-actions>
-          </mat-card-content>
-        </mat-card>
-      </div>
-    </div>
-  </div>
+  <app-constructions></app-constructions>
   <app-contacts></app-contacts>
 </div>

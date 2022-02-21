@@ -1,5 +1,7 @@
 <div class="cards">
-    <p class="titleSection" style="color: black; margin-top: 128px;">Experiencia</p>
+    <p class="titleSection" style="color: black; padding-top: 190px; padding-bottom: 112px;">Experiencia</p>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1aTTWjri3OQxHoyF-cTfNjUT71vtNoxZW&ehbc=2E312F" width="90%"
+        height="480"></iframe>
     <div class="row">
         <mat-card class="mat-elevation-z4" *ngFor="let item of rowItems">
             <mat-card-header>
@@ -10,7 +12,7 @@
                 <img mat-card-image [src]="item.image">
             </div>
             <mat-card-actions>
-                <button mat-button (click)="openDialog(item)">Más información</button>
+                <button mat-button color="primary" (click)="openDialog(item)">Más información</button>
             </mat-card-actions>
         </mat-card>
     </div>

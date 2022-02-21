@@ -4,6 +4,8 @@
 
 .cards {
     justify-content: center;
+    align-content: center;
+    text-align: center;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 96px;
@@ -12,6 +14,7 @@
 .row {
     align-content: center;
     justify-content: center;
+    margin-top: 96px;
 }
 
 mat-card {
@@ -37,4 +40,8 @@ mat-card {
     align-content: center;
     align-self: center;
     justify-content: center;
+}
+
+iframe {
+    border-radius: 32px;
 }

@@ -60,12 +60,11 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     MatDialogModule,
     MatSidenavModule,
     MatPaginatorModule,
-    TextFieldModule
+    TextFieldModule,
   ],
   providers: [],
   bootstrap: [
-    AppComponent,
-    HomeComponent,
+    AppComponent
   ]
 })
 export class AppModule { }
